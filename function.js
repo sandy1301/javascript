@@ -13,9 +13,12 @@ function name(fname,lname){
 name("sandhiya","santhosh");
 
 let k=2,l=4;
-function number(odd,even){
-     if(number%2!=0){
+function number(odd){
+     if(number%2==0){
      console.log("the number is" + odd);
 
-}}
-number(2,9);
+
+}
+number=(5,8)
+
+}
