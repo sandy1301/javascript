@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <title>mouse event</title>
+</html>
+<body>
+    <h1 id="me">hi</h1>
+</body>
+<script>
+    let btn=document.getElementById("me");
+    btn.addEventListener("click", (event) => {
+        btn.textContent="is there";
+         console.log("clicked");
+    })
+
+    btn.addEventListener("mouseover", (event) =>{
+        btn.textContent="yes";
+        console.log("hover");
+    })
+
+    btn.addEventListener("mouseout", (event) => {
+        btn.textContent="hello";
+        console.log("mouseout");
+    })
+
+
+    
+
+</script>
+
+

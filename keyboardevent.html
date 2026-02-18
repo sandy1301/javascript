@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Keyboard Event</title>
+    </head>
+    <body>
+        <button id="sb">1</button>    
+    </body>
+    <script>
+        console.log("hii");
+        let btn =document.getElementById("sb");
+        document.addEventListener("keydown", (event) =>{
+        console.log(event.key);
+        switch(event.key){
+            case 'ArrowUp':
+                btn.textContent=Number(btn.textContent)+1;
+                break;
+            case 'ArrowDown':
+                btn.textContent=Number(btn.textContent)-1;
+                break;
+        }
+        })
+    </script>
+</html>
